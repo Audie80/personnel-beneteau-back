@@ -10,9 +10,9 @@
     "test": "export NODE_ENV=test && mocha"
   },
   "dependencies": {
-    "body-parser": "~1.19.0",
+    "body-parser": "~1.19.2",
     "config": "^3.2.4",
-    "express": "~4.17.1",
+    "express": "~4.17.3",
     "mysql": "~2.17.1",
     "node": "~12.7.0"
   },
