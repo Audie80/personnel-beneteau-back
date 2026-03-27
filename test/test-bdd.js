@@ -8,9 +8,10 @@ const bddsql = require("../config/databaseTest.config");
 chai.use(chaiHttp);
 
 describe("BDD connection", () => {
-  beforeEach(function () {
+  beforeEach(function (done) {
     bddsql.BDDSQL.query("DELETE FROM EMPLOYEES", function (err, result) {
       if (err) throw err;
+      done()
     });
   });
 
