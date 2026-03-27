@@ -10,7 +10,7 @@
     "test": "export NODE_ENV=test && mocha"
   },
   "engines": {
-    "node": ">=14.20.0"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "dependencies": {
     "body-parser": "~1.20.3",
@@ -21,6 +21,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "10.2.0"
+    "mocha": "11.7.5"
   }
 }
