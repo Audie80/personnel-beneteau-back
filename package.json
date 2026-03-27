@@ -9,16 +9,18 @@
     "main": "app.js",
     "test": "export NODE_ENV=test && mocha"
   },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
   "dependencies": {
     "body-parser": "~1.20.3",
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "express": "~4.22.0",
-    "mysql": "~2.18.0",
-    "node": "~12.7.0"
+    "mysql": "~2.18.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^7.2.0"
+    "mocha": "11.7.5"
   }
 }
