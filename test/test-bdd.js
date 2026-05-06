@@ -57,3 +57,14 @@ describe("BDD connection", () => {
   });
 
 });
+
+// Fermer proprement le serveur à la fin des tests
+after(function(done) {
+  server.close(() => {
+    if (bddsql && bddsql.BDDSQL && typeof bddsql.BDDSQL.end === 'function') {
+      bddsql.BDDSQL.end(() => done());
+    } else {
+      done();
+    }
+  });
+});
